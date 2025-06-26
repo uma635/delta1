@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="edge://resources/css/md_colors.css">
+  <link rel="stylesheet" href="edge://resources/css/text_defaults_md.css">
+  <link rel="stylesheet" href="index.css">
+  <!-- Enable error-reporting -->
+  <script src="pdf-error-reporting.js"></script>
+</head>
+<body>
+
+  <!-- the contents of ui-container are react-based PDF UI components -->
+  <div id="ui-container"></div>
+
+  <!-- This is container div for the currently open modal if exists -->
+  <div id="modal-root"></div>
+
+  <div id="sizer"></div>
+
+  <div id="document-container">
+    <div id="embed-border"></div>
+  </div>
+
+</body>
+<script src="../setup.js"></script>
+<script src="dist/lib_fast_deprecated.chunk.js"></script>
+<script src="dist/lib_fast_web_components.chunk.js"></script>
+<script src="dist/lib_react.chunk.js"></script>
+<script src="dist/pdfui_component.chunk.js"></script>
+<script src="dist/pdf.bundle.js"></script>
+</html>
